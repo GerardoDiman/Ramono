@@ -61,8 +61,7 @@ def run_alexa():
     else:
         talk('Repite en comando de nuevo.')
 
-#############################
+###############
 
 while True:
     run_alexa()
-
