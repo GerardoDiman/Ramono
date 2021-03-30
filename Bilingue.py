@@ -6,7 +6,8 @@ import wikipedia
 import pyjokes
 
 listener = sr.Recognizer()
-listener.energy_threshold = 3000 # Nivel de energia de los sonidos (type: float)
+listener.energy_threshold = 300 # Nivel de energia de los sonidos (type: float)
+recognizer_instance.pause_threshold = 0.8 # Dureación minima de silencio
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[2].id)
